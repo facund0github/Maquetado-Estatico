@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Bangers', cursive;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+h1{font-size: 3.5em;}
+h2 {font-size: 2.7em;}
+h3{font-size: 2em;}
+p{font-size: 1.25em;}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    height: 10vh;
+    width: 100vw;
+    position: fixed;
+    background-color: #0c0c0c;
+}
+
+.logo {
+    height: 10vh;
+}
+
+header .container {
+    width: 100%;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    
+} 
+
+.YoProgramo{
+    align-self: center;
+    font-size: 12px;   
+}
+.YoProgramo p {
+    margin: 0;
+    color: hsl(0, 0%, 100%);
+}
+
+ header nav {
+    align-self: center;
+    margin-right: 8px;
+    
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: hwb(0 85% 15%);
+    text-align: center;
+}
+
+header a:hover {
+    color: hsl(229, 9%, 38%);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: rgb(255, 255, 255);
+    background-image: url(/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+#aboutme .container {
+    text-align: center;
+    padding: 100px 12px;
+    color: #ffffff;
+    font-family: 'Holtwood One SC', serif;
+    height: 90vh;
+
+}
+
+/* TRABAJOS */
+
+#experiencia {
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#experencia .container {
+    padding: 100px;
+    height: 90vh;
+}
+
+#experiencia h2  {
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+
+#experiencia .carta {
+    padding: 50px;
+    margin: 15px;
+    border-radius: 15px;
+    color: #0c0c0c;
+
+}
+
+.carta:first-child {
+    background-color: hsl(82, 6%, 74%);
+}
+
+.carta:nth-child(2) {
+    background-color: hsl(82, 6%, 74%);
+}
+
+.carta:last-child {
+    background-color: hsl(82, 6%, 74%);
+}
+   
+
+/* EDUCACION  */
+
+
+#educacion .container {
+    text-align: center;
+    padding: 5px;
+    height: 90vh;
+}
+#educacion .cartas {
+    padding: 50px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+.cartas:first-child {
+    background-color: hsl(82, 6%, 74%);
+}
+
+.cartas:nth-child(2) {
+    background-color: hsl(82, 6%, 74%);
+    
+}
+
+/* SKILLS */
+
+#skills .container {
+    text-align: center;
+    padding: 5px;
+    height: 90vh;
+}
+
+.habilidad {
+    padding: 50px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.habilidad:first-child {
+    background-color: hsl(82, 6%, 74%);
+}
+
+.habilidad:nth-child(2) {
+    background-color: hsl(82, 6%, 74%);
+    
+}
+
+
+/* FOOTER */
+
+footer .container {
+    text-align: center;
+}
+
+
