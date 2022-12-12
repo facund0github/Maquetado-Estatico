@@ -9,18 +9,14 @@ html {
 
 body {
     font-family: 'Bangers', cursive;
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
 }
-
-h1{font-size: 3.8em;}
-h2 {font-size: 2.7em;}
-h3{font-size: 2em;}
-p{font-size: 1.25em;}
 
 .container {
     max-width: 1400px;
     margin: auto;
 }
+
+/* H E A D E R */
 
 header {
     height: 10vh;
@@ -44,6 +40,7 @@ header .container {
     margin-right: 25px;
     background-color: #0c0c0c;
     color: #ffffff;
+    border: none;
 }
 
 .btn-menu {
@@ -52,19 +49,16 @@ header .container {
     background: #0c0c0c;
     color: #ffffff;
     margin-left: 10px;
+    border: none;
 }
 
 .header-menu {
+    background-color: hsla(0, 13%, 6%, 0.795);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     display: none;
-}
-
-.YoProgramo{
-    align-self: center;
-    font-size: 12px;
-}
-.YoProgramo p {
-    margin: 0;
-    color: hsl(0, 0%, 100%);
 }
 
  header nav {
@@ -101,113 +95,358 @@ header a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    border-bottom-style: groove;
 }
 
+/* S O B R E  M I */
+#aboutme {
+    background-color: #f3f3f3;
+}
 
 #aboutme .container {
     text-align: center;
     padding: 100px 12px;
     color: #000000;
     height: 90vh;
-    background: #ffffff;
 }
 
-#aboutme p {
-    font-family: 'Montserrat', sans-serif;
+#aboutme .container-foto {
+    max-width: 400px;
+    margin: auto;
 }
 
-/* TRABAJOS */
+.container-foto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#aboutme .sobre-mi {
+    margin: 0 40px;
+}
+#aboutme .sobre-mi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 3px;
+}
+
+#aboutme .sobre-mi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+#aboutme .sobre-mi h2 span {
+    color: #ff5080;
+}
+#aboutme .sobre-mi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#aboutme .sobre-mi p {
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+
+/* T R A B A J O S */
 
 #experiencia {
-    color: #ffffff;
+    background-color: #f3f3f3;
     text-align: center;
     padding: 100px 0;
 }
 
-#experencia .container {
-    padding: 100px;
-    height: 90vh;
+#experiencia .titulo-seccion {
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 3px;
+    margin-bottom: 25px;
 }
 
-#experiencia h2  {
-    margin: 0;
-    color: rgb(0, 0, 0);
+#experiencia .trabajo {
+    padding: 50px;
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+#experiencia .trabajo:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#experiencia .trabajo h4 {
+    margin-bottom: 25px;
+}
+
+#experiencia .trabajo .icono {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+#experiencia .trabajo hr {
+    width: 30%;
+    margin: auto;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+/* E D U C A C I O N  */
+
+#educacion {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#educacion .titulo-seccion {
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 3px;
+    margin-bottom: 25px;
+}
+
+#educacion .estudio {
+    padding: 50px;
+    background-color: #fff;
+    margin: 15px;
+    border-radius: 5px;
+}
+
+#educacion .estudio:hover {
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+
+#educacion .estudio h4 {
+    margin-bottom: 25px;
+}
+
+#educacion .estudio .icono {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+#educacion .estudio hr {
+    width: 30%;
+    margin: auto;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+
+
+/* S K I L L S */
+
+#skills {
+    background: linear-gradient(#eb5a5acc, rgba(33,16,16,.8)), url("laptop-2838921_960_720.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
     font-weight: bolder;
 }
 
-
-#experiencia .carta {
-    padding: 50px;
-    margin: 15px;
-    border-radius: 15px;
-    color: #0c0c0c;
-
+#skills .skill {
+    max-width: 600px;
+    margin: 30px auto;
 }
 
-.carta:first-child {
-    background-color: hsl(82, 6%, 74%);
+#skills .info {
+    display: flex;
+    justify-content: space-between;
 }
 
-.carta:nth-child(2) {
-    background-color: hsl(82, 6%, 74%);
+#skills .info .lista {
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
 }
 
-.carta:last-child {
-    background-color: hsl(82, 6%, 74%);
+#skills .skill .barra {
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
 }
-   
 
-/* EDUCACION  */
+#skills .skill .barra .barra-progreso1 {
+    background-color: #fff;
+    width: 95%;
+    height: 6px;
+}
 
+#skills .skill .barra .barra-progreso2 {
+    background-color: #fff;
+    width: 60%;
+    height: 6px;
+}
+
+#skills .skill .barra .barra-progreso3 {
+    background-color: #fff;
+    width: 50%;
+    height: 6px;
+}
+
+#skills .skill .barra .barra-progreso4 {
+    background-color: #fff;
+    width: 40%;
+    height: 6px;
+}
+
+@keyframes progreso1 {
+   0% {
+    width: 0;
+}
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progreso2 {
+    0% {
+     width: 0;
+ }
+     100% {
+         width: 60%;
+     }
+ }
+
+ @keyframes progreso3 {
+    0% {
+     width: 0;
+ }
+     100% {
+         width: 50%;
+     }
+ }
+
+ @keyframes progreso4 {
+    0% {
+     width: 0;
+ }
+     100% {
+         width: 40%;
+     }
+ }
+
+/* P R O Y E C T O S */
+
+#proyectos {
+    padding: 100px 0;
+    margin: auto;
+}
+
+#proyectos .titulo-seccion {
+    text-align: center;
+   font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 3px;
+    margin-bottom: 25px;
+}
+
+#proyectos .container .proyecto {
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#proyectos .container .proyecto img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#proyectos .container .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#proyectos .container .proyecto .info {
+    position: absolute;
+    left: 0;
+    background-color: rgb(0, 0, 0, .8);
+    color: #ff5080;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#proyectos .container .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+
+/* F O O T E R */
+
+footer {
+    text-align: center;
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+}
+
+
+ /* V E R S I O N  D E S K T O P */
+
+ @media screen and (min-width: 720px) {
+
+ #experiencia .container {
+    display: flex;
+    justify-content: center;
+ }
+
+#experiencia .trabajo {
+    width: 500px;
+}
 
 #educacion .container {
-    text-align: center;
-    padding: 5px;
-    height: 90vh;
-}
-#educacion .cartas {
-    padding: 50px;
-    margin: 15px;
-    border-radius: 15px;
+    display: flex;
+    justify-content: center;
 }
 
-.cartas:first-child {
-    background-color: hsl(82, 6%, 74%);
-}
-
-.cartas:nth-child(2) {
-    background-color: hsl(82, 6%, 74%);
-    
-}
-
-/* SKILLS */
-
-#skills .container {
-    text-align: center;
-    padding: 5px;
-    height: 90vh;
-}
-
-.habilidad {
-    padding: 50px;
-    border-radius: 15px;
-    margin: 15px;
-}
-
-.habilidad:first-child {
-    background-color: hsl(82, 6%, 74%);
-}
-
-.habilidad:nth-child(2) {
-    background-color: hsl(82, 6%, 74%);
-    
+#educacion .estudio {
+    width: 500px;
 }
 
 
-/* FOOTER */
 
-footer .container {
-    text-align: center;
+
+
+
 }
-
-
